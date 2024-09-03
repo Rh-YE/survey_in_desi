@@ -152,6 +152,19 @@ for band in ["g", "r", "z"]:
 target = LISPipe(img, invvar, ra, dec, wcs)
 cropped_img, cropped_invvar, cropped_snr = target.crop_fov(h=128, w=128) # 设置裁剪大小
 ```
+
+### catalog(tractor)获取
+DESI-LIS跑的第二遍sextractor输出的catalog文件描述在：https://www.legacysurvey.org/dr10/catalogs/
+
+下载的url格式为：
+```
+f"https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr{data release num}/{south/north}/tractor/{brickname[:3]}/tractor-{brickname}.fits"
+```
+以及每个每个`brickname[:3]`文件夹下都有一个校验文件：
+```
+f"https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr{data release num}/{south/north}/tractor/{brickname[:3]}/legacysurvey_dr{data release num}_{south/north}_tractor_{brickname[:3]}.sha256sum"
+```
+
 ## Data
 ### 数据特性
 DESI-LIS的叠加完的大图图像和小图图像的像素值单位都是nanomaggy，这是流量的常用表达方式，它可以通过以下方式与标准的星等表达方式联系：$m=22.5-2.5\log10(\text{flux})$。具体关于星等和流量的介绍可以参照SDSS的介绍：https://www.sdss3.org/dr8/algorithms/magnitudes.php
