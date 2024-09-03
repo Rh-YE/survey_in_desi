@@ -180,7 +180,7 @@ DESI-LIS的叠加完的大图图像和小图图像的像素值单位都是nanoma
 title = {survey in DESI-LIS},
 author = {Renhao Ye},
 year = {2024},
-url = {https://github.com/yourusername/yourrepository},
+url = {https://github.com/Rh-YE/survey_in_desi},
 note = {survey in DESI, a guideline for understand DESI-LIS data and access},
 ```
 or acknowledgment: 
