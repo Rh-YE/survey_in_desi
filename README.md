@@ -1,5 +1,5 @@
 ## Dark Energy Spectrograph Instrument Legacy Imaging Surveys
-本文主要介绍Dark Energy Spectrograph Instrument Legacy Imaging Surveys（DESI-LIS）部分的数据细节，力争帮助每一位想要挖掘DESI-LIS的科研工作者更快地入门。DESI可以视为SDSS的继任者，其目标是在五年内拍摄14000平方度内三千万个星系的光谱。DESI-LIS是用来确定DESI拍摄光谱目标的测光巡天。为了在限定的三年时间内完成DESI-LIS巡天，其分为三个项目（DECaLS、BASS、MzLS）来进行grz三个波段，并加上了WISE卫星的四个红外波段观测。主要覆盖了如下的区域：
+本文主要介绍Dark Energy Spectrograph Instrument Legacy Imaging Surveys（DESI-LIS）及其数据细节和获取方式，帮助每一位想要挖掘DESI-LIS的用户更快地入门并访问海量的数据。DESI可以视为SDSS的继任者，其目标是在五年内拍摄14000平方度内三千万个星系的光谱。DESI-LIS是用来确定DESI拍摄光谱目标的测光巡天。为了在限定的三年时间内完成DESI-LIS巡天，其分为三个项目（DECaLS、BASS、MzLS）来进行grz三个波段，并加上了WISE卫星的四个红外波段观测。主要覆盖了如下的区域：
 ![](https://raw.githubusercontent.com/Rh-YE/Image/main/202409021631624.png)
 ### The Dark Energy Camera Legacy Survey (DECaLS) https://www.legacysurvey.org/decamls/
 相机名：Dark Energy Camera (DECam)， 望远镜：Blanco 4m telescope。位于Cerro Tololo Inter-American Observatory。g和r波段在无月夜时拍摄，z波段在有月夜和早晨及黄昏时拍摄。
