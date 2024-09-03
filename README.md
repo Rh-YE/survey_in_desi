@@ -156,7 +156,7 @@ cropped_img, cropped_invvar, cropped_snr = target.crop_fov(h=128, w=128) # 设�
 ### 数据特性
 DESI-LIS的叠加完的大图图像和小图图像的像素值单位都是nanomaggy，这是流量的常用表达方式，它可以通过以下方式与标准的星等表达方式联系：$m=22.5-2.5\log10(\text{flux})$。具体关于星等和流量的介绍可以参照SDSS的介绍：https://www.sdss3.org/dr8/algorithms/magnitudes.php
 ### Sweeps files
-用于和SDSS的测光匹配，在https://www.legacysurvey.org/dr10/description/#photometry，提供了转换方式
+用于和SDSS的测光匹配，在此url中提供了转换方式：https://www.legacysurvey.org/dr10/description/#photometry
 
 ## Update with issues
 - DESI-LIS图像的物理方向与SDSS相反
