@@ -35,7 +35,7 @@ DESI主要分为south和north两个部分，北天为BASS+MzLS，南天为DECaLS
 
 DESI-LIS的图像主要有两种获取方式，大图模式和小图模式，大图模式的下载方式为整体下载或者根据brickname来定位brick确定大图。小图模式则是利用DESI提供的url模式，来调取DESI的自动裁剪程序，下载指定的图层。我们将分别举例说明这两种方式。
 
-DESI-LIS数据下载有两个渠道可以访问，其一是从DESI-LIS官网的文件网站https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr10/访问或者DESI-LIS的交互式网站https://www.legacysurvey.org/viewer，其二是从中国的国家天文科学数据中心（NADC）访问https://nadc.china-vo.org/res/r102022/，NADC提供了交互式的catalog查询页面https://nadc.china-vo.org/data/data/legacysurvey10tractor/f以及数据的镜像下载地址，适合中国国内用户下载访问https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/dr10/。
+DESI-LIS数据下载有两个渠道可以访问，其一是从DESI-LIS官网的文件网站：https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr10/，访问或者DESI-LIS的交互式网站：https://www.legacysurvey.org/viewer，其二是从中国的国家天文科学数据中心（NADC）访问：https://nadc.china-vo.org/res/r102022/，NADC提供了交互式的catalog查询页面：https://nadc.china-vo.org/data/data/legacysurvey10tractor/f，以及数据的镜像下载地址，适合中国国内用户下载访问：https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/dr10/。
 ### 小图模式
 
 DESI-LIS有一个交互式的网站，`https://www.legacysurvey.org/viewer`。我们可以通过在这个页面拖曳天区，在左下角输入坐标或目标名称来定位到对应位置，并根据右侧所选的图层展示对应的数据（右侧的overlays能够在显示图像以外，提供部分catalog信息）
@@ -278,7 +278,7 @@ We would like to thank Renhao Ye (叶人豪) for providing the "survey in DESI-L
 感谢DESI团队，国家天文科学数据中心（NADC），感谢沈世银老师的指导，感谢陈宓、徐权峰、沈梦婷以及A3训练营中部分项目在处理DESI-LIS数据中所反馈的各种问题以促进此文档的形成。
 
 ## Contact
-上海天文台博士研究生叶人豪，renhaoye@shao.ac.cn，欢迎合作。
+中国科学院上海天文台博士研究生叶人豪，renhaoye@shao.ac.cn，欢迎合作。
 
 ## Reference
 
