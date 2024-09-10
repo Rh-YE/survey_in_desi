@@ -276,6 +276,10 @@ We would like to thank Renhao Ye (叶人豪) for providing the "survey in DESI-L
 ## Acknowledgment
 
 感谢DESI团队，国家天文科学数据中心（NADC），感谢沈世银老师的指导，感谢陈宓、徐权峰、沈梦婷以及A3训练营中部分项目在处理DESI-LIS数据中所反馈的各种问题以促进此文档的形成。
+
+## Contact
+上海天文台博士研究生叶人豪，renhaoye@shao.ac.cn，欢迎合作。
+
 ## Reference
 
 1. Dey, A. _et al._ Overview of the DESI Legacy Imaging Surveys. _The Astronomical Journal_ **157**, 168 (2019).
