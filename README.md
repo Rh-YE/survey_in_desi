@@ -35,7 +35,7 @@ DESI主要分为south和north两个部分，北天为BASS+MzLS，南天为DECaLS
 
 DESI-LIS的图像主要有两种获取方式，大图模式和小图模式，大图模式的下载方式为整体下载或者根据brickname来定位brick确定大图。小图模式则是利用DESI提供的url模式，来调取DESI的自动裁剪程序，下载指定的图层。我们将分别举例说明这两种方式。
 
-DESI-LIS数据下载有两个渠道可以访问，其一是从DESI-LIS官网的文件网站：<https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr10/>，访问或者DESI-LIS的交互式网站：<https://www.legacysurvey.org/viewer>，其二是从中国的国家天文科学数据中心（NADC）访问：<https://nadc.china-vo.org/res/r102022/>，NADC提供了交互式的catalog查询页面：<https://nadc.china-vo.org/data/data/legacysurvey10tractor/f>，以及数据的镜像下载地址，适合中国国内用户下载访问：<https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/dr10/>。
+DESI-LIS数据下载有两个渠道可以访问，其一是从DESI-LIS官网的文件网站：<https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr10/>，访问或者DESI-LIS的交互式网站：<https://www.legacysurvey.org/viewer>，其二是从中国的国家天文科学数据中心（NADC）访问：<https://nadc.china-vo.org/res/r102022/>，NADC提供了交互式的catalog查询页面：<https://nadc.china-vo.org/data/data/legacysurvey10tractor/f>，以及数据的镜像下载地址，适合中国国内用户下载访问：<https://casdc.china-vo.org/mirror/DESI/cosmo/data/legacysurvey/dr10/>。
 ### 小图模式
 
 DESI-LIS有一个交互式的网站，<https://www.legacysurvey.org/viewer>。我们可以通过在这个页面拖曳天区，在左下角输入坐标或目标名称来定位到对应位置，并根据右侧所选的图层展示对应的数据（右侧的overlays能够在显示图像以外，提供部分catalog信息）
@@ -117,7 +117,7 @@ f"https://www.legacysurvey.org/viewer/coadd-psf/?ra={RA}&dec={DEC}&layer={layer}
 
 ### 大图模式
 
-DESI-LIS除了单张原图以外的所有科学图像，都在<https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/>中根据不同的数据释放编号编排，<https://www.legacysurvey.org/dr10/files/>中提供了每个类型文件的具体描述。大图也可以从NADC提供的数据镜像下载，将上述链接`https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/`替换为`https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/`即可。
+DESI-LIS除了单张原图以外的所有科学图像，都在<https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/>中根据不同的数据释放编号编排，<https://www.legacysurvey.org/dr10/files/>中提供了每个类型文件的具体描述。大图也可以从NADC提供的数据镜像下载，将上述链接`https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/`替换为`https://casdc.china-vo.org/mirror/DESI/cosmo/data/legacysurvey/`即可。
 
 这个链接内部是个文件夹的形式，直觉上我们可以直接递归下载整个数据集，但我推荐更快且更简单的方式是根据brickname索引，然后直接建立好所有的url，对于south区域只需要确定该brick是否有i-band数据即可。south或north区域包含的全部brickname都存在指定文件中，例如dr10的south区域则存在south/survey-bricks-dr10-south.fits.gz中。
 
@@ -132,7 +132,7 @@ url内部的编排格式为（假设为南天区域且有i-band数据的情况�
 
 root = https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr{data release num}/{south/north}/coadd/{brickname[:3]}/{brickname}
 # NADC镜像链接的格式，在后文中不再额外举例，直接替换即可。
-# root = https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/dr{data release num}/{south/north}/coadd/{brickname[:3]}/{brickname}
+# root = https://casdc.china-vo.org/mirror/DESI/cosmo/data/legacysurvey/dr{data release num}/{south/north}/coadd/{brickname[:3]}/{brickname}
 f"{root}//legacysurvey-{brickname}-blobmodel-{g/r/i/z}.fits.fz"
 f"{root}/legacysurvey-{brickname}-blobmodel.jpg"
 f"{root}/legacysurvey-{brickname}-ccds.fits"
