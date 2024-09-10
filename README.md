@@ -5,17 +5,17 @@
 
 ![](https://raw.githubusercontent.com/Rh-YE/Image/main/202409021631624.png)
 
-### The Dark Energy Camera Legacy Survey (DECaLS) https://www.legacysurvey.org/decamls/
+### The Dark Energy Camera Legacy Survey (DECaLS) <https://www.legacysurvey.org/decamls/>
 
 相机名：Dark Energy Camera (DECam)， 望远镜：Blanco 4m telescope。位于Cerro Tololo Inter-American Observatory。g和r波段在无月夜时拍摄，z波段在有月夜和早晨及黄昏时拍摄。
 
-### The Beijing-Arizona Sky Survey (BASS) https://www.legacysurvey.org/bass/
+### The Beijing-Arizona Sky Survey (BASS) <https://www.legacysurvey.org/bass/>
 
 相机名：90Prime，望远镜：Bok 2.3-m telescope。位于位于Kitt Peak National Observatory
 
 在蓝端的响应更好，故BASS中g, r的效率更高。g波段在无月夜观测。
 
-### Mayall z-band Legacy Survey (MzLS) https://www.legacysurvey.org/mzls/
+### Mayall z-band Legacy Survey (MzLS) <https://www.legacysurvey.org/mzls/>
 
 相机名：MOSAIC-3，望远镜：4-meter Mayall telescope.位于Kitt Peak National Observatory。Mayall望远镜于1973年就开始运行，完成z-band巡天后于2018年2月12日关闭，开始安装DESI光谱仪。
 
@@ -35,10 +35,10 @@ DESI主要分为south和north两个部分，北天为BASS+MzLS，南天为DECaLS
 
 DESI-LIS的图像主要有两种获取方式，大图模式和小图模式，大图模式的下载方式为整体下载或者根据brickname来定位brick确定大图。小图模式则是利用DESI提供的url模式，来调取DESI的自动裁剪程序，下载指定的图层。我们将分别举例说明这两种方式。
 
-DESI-LIS数据下载有两个渠道可以访问，其一是从DESI-LIS官网的文件网站：https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr10/，访问或者DESI-LIS的交互式网站：https://www.legacysurvey.org/viewer，其二是从中国的国家天文科学数据中心（NADC）访问：https://nadc.china-vo.org/res/r102022/，NADC提供了交互式的catalog查询页面：https://nadc.china-vo.org/data/data/legacysurvey10tractor/f，以及数据的镜像下载地址，适合中国国内用户下载访问：https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/dr10/。
+DESI-LIS数据下载有两个渠道可以访问，其一是从DESI-LIS官网的文件网站：<https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr10/>，访问或者DESI-LIS的交互式网站：<https://www.legacysurvey.org/viewer>，其二是从中国的国家天文科学数据中心（NADC）访问：<https://nadc.china-vo.org/res/r102022/>，NADC提供了交互式的catalog查询页面：<https://nadc.china-vo.org/data/data/legacysurvey10tractor/f>，以及数据的镜像下载地址，适合中国国内用户下载访问：<https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/dr10/>。
 ### 小图模式
 
-DESI-LIS有一个交互式的网站，`https://www.legacysurvey.org/viewer`。我们可以通过在这个页面拖曳天区，在左下角输入坐标或目标名称来定位到对应位置，并根据右侧所选的图层展示对应的数据（右侧的overlays能够在显示图像以外，提供部分catalog信息）
+DESI-LIS有一个交互式的网站，<https://www.legacysurvey.org/viewer>。我们可以通过在这个页面拖曳天区，在左下角输入坐标或目标名称来定位到对应位置，并根据右侧所选的图层展示对应的数据（右侧的overlays能够在显示图像以外，提供部分catalog信息）
 
 通过点击画面中的任意位置,我们可以获取这个位置的赤经赤纬。
 
@@ -54,9 +54,9 @@ DESI-LIS有一个交互式的网站，`https://www.legacysurvey.org/viewer`。�
 
 DESI下载小图的一种常用方式是修改给定格式的url，然后使用wget下载这个url存储到指定位置.接下来我们会介绍在DESI-LIS中支持的所有天文图像类型及巡天的下载方式。在这个链接中有部分描述:
 
-- https://www.legacysurvey.org/viewer/urls
+- <https://www.legacysurvey.org/viewer/urls>
 
-- https://www.legacysurvey.org/dr10/description/#obtaining-images-and-raw-data
+- <https://www.legacysurvey.org/dr10/description/#obtaining-images-and-raw-data>
 
 ##### 叠加完的小图(最基础)
 
@@ -70,7 +70,7 @@ layer控制了指定这个位置具体下载那个图层，常见的三种图为
 
 layer支持还支持以下图层：`layer=['decals-dr5', 'decals-dr5-model', 'decals-dr7', 'decals-dr7-model','eboss','mzls+bass-dr6', 'mzls+bass-dr6-model','unwise-neo3', 'unwise-neo4', 'unwise-neo6', 'unwise-neo7','unwise-w3w4','unwise-cat-model','galex', 'wssa', 'des-dr1', 'hsc2', 'hsc-dr3','cfis-dr3-r', 'cfis-dr3-u','dr8-north', 'dr8-north-model', 'dr8-north-resid','dr8-south', 'dr8-south-model', 'dr8-south-resid','dr9c', 'dr9c-model', 'dr9c-resid','dr9d-south', 'dr9d-south-model', 'dr9d-south-resid','dr9d-north', 'dr9d-north-model', 'dr9d-north-resid','dr9e-south', 'dr9e-south-model', 'dr9e-south-resid','dr9e-north', 'dr9e-north-model', 'dr9e-north-resid','dr9sv-south', 'dr9sv-south-model', 'dr9sv-south-resid','dr9sv-north', 'dr9sv-north-model', 'dr9sv-north-resid','dr9sv', 'dr9sv-model', 'dr9sv-resid','fornax', 'fornax-model', 'fornax-resid','vlass1.2', 'ztf','ls-dr9-south', 'ls-dr9-south-model','ls-dr9-north', 'ls-dr9-north-model','ls-dr9.1.1', 'ls-dr9.1.1-model','ls-dr9-south-B', 'ls-dr9-south-B-model','asteroids-i','ls-dr10-early', 'ls-dr10a', 'ls-dr10a-model','ls-dr10', 'ls-dr10-model','ls-dr10-grz', 'ls-dr10-model-grz','pandas', 'wiro-C', 'wiro-D','suprime-L427', 'suprime-L427-model','suprime-L464', 'suprime-L464-model','suprime-L484', 'suprime-L484-model','suprime-L505','suprime-L505-model','suprime-L527', 'suprime-L527-model','suprime-ia-v1', 'suprime-ia-v1-model','cfht-cosmos-cahk','decaps2', 'decaps2-model','dr10-deep', 'dr10-deep-model', 'ibis-color', 'ibis',]`
 
-如果不确定给定坐标是否有这些图层，请先使用python请求网站识别返回的状态码。该图层为源码中提取的：https://github.com/legacysurvey/imagine/blob/9e2aca9c0301e8f831aa1fa547ef005293c64ee6/render-tiles.py
+如果不确定给定坐标是否有这些图层，请先使用python请求网站识别返回的状态码。该图层为源码中提取的：<https://github.com/legacysurvey/imagine/blob/9e2aca9c0301e8f831aa1fa547ef005293c64ee6/render-tiles.py>
 
 当你定义完你的url，可以批量下载的方式是将所有的url写入一个文件（例如urls.txt)，里面的格式如下所示
 
@@ -117,7 +117,7 @@ f"https://www.legacysurvey.org/viewer/coadd-psf/?ra={RA}&dec={DEC}&layer={layer}
 
 ### 大图模式
 
-DESI-LIS除了单张原图以外的所有科学图像，都在https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/中根据不同的数据释放编号编排，https://www.legacysurvey.org/dr10/files/中提供了每个类型文件的具体描述。大图也可以从NADC提供的数据镜像下载，将上述链接`https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/`替换为`https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/`即可。
+DESI-LIS除了单张原图以外的所有科学图像，都在<https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/>中根据不同的数据释放编号编排，<https://www.legacysurvey.org/dr10/files/>中提供了每个类型文件的具体描述。大图也可以从NADC提供的数据镜像下载，将上述链接`https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/`替换为`https://casdc.china-vo.org/mirror/DESIDR9/cosmo/data/legacysurvey/`即可。
 
 这个链接内部是个文件夹的形式，直觉上我们可以直接递归下载整个数据集，但我推荐更快且更简单的方式是根据brickname索引，然后直接建立好所有的url，对于south区域只需要确定该brick是否有i-band数据即可。south或north区域包含的全部brickname都存在指定文件中，例如dr10的south区域则存在south/survey-bricks-dr10-south.fits.gz中。
 
@@ -220,7 +220,7 @@ cropped_img, cropped_invvar, cropped_snr = target.crop_fov(h=128, w=128) # 设�
 
 ### catalog(tractor)获取
 
-DESI-LIS跑的第二遍sextractor输出的catalog文件描述在：https://www.legacysurvey.org/dr10/catalogs/
+DESI-LIS跑的第二遍sextractor输出的catalog文件描述在：<https://www.legacysurvey.org/dr10/catalogs/>
 下载的url格式为：
 
 ```
@@ -241,10 +241,10 @@ f"https://portal.nersc.gov/cfs/cosmo/data/legacysurvey/dr{data release num}/{sou
 
 ### 数据特性
 
-DESI-LIS的叠加完的大图图像和小图图像的像素值单位都是nanomaggy，这是流量的常用表达方式，它可以通过以下方式与标准的星等表达方式联系：$m=22.5-2.5\log10(\text{flux})$。具体关于星等和流量的介绍可以参照SDSS的介绍：https://www.sdss3.org/dr8/algorithms/magnitudes.php
+DESI-LIS的叠加完的大图图像和小图图像的像素值单位都是nanomaggy，这是流量的常用表达方式，它可以通过以下方式与标准的星等表达方式联系：$m=22.5-2.5\log10(\text{flux})$。具体关于星等和流量的介绍可以参照SDSS的介绍：<https://www.sdss3.org/dr8/algorithms/magnitudes.php>
 ### Sweeps files
 
-用于和SDSS的测光匹配，在此url中提供了转换方式：https://www.legacysurvey.org/dr10/description/#photometry
+用于和SDSS的测光匹配，在此url中提供了转换方式：<https://www.legacysurvey.org/dr10/description/#photometry>
 
 ## Update with issues
 
