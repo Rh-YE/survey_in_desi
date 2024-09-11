@@ -110,10 +110,10 @@ f"https://www.legacysurvey.org/viewer/coadd-psf/?ra={RA}&dec={DEC}&layer={layer}
 ##### 下载invvar误差图
 
 误差图提供的是方差的倒数（inverse-variance），即1/sigma^2。在这里额外提及invvar是为了提醒以下内容
+想下载误差图可以通过修改`https://www.legacysurvey.org/viewer/cutout.{jpg or fits}?ra={RA}&dec={Dec}&layer={layer name}&pixscale={pixel scale}&size={size}&bands={bands}`，在他的后面添加一个参数`&invvar=True`即可。
 
-- 在当前版本的DESI-LIS数据下载逻辑中已经不支持单独下载invvar的小图，需要下载大图自己裁剪。
-
-- 如果测光图像使用小图模式下载的，误差图下载的大图后再裁剪的，则两者的坐标容易出现对不齐的情况，建议需要误差图的情况下，测光图像也从大图中裁剪。
+除此之外，这个url后面的参数可以设置成下面这些，例如no-image参数可以让fits里只有invvar没有原来的测光图像
+![](https://raw.githubusercontent.com/Rh-YE/Image/main/202409111533125.png)
 
 ### 大图模式
 
