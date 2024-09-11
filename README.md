@@ -60,7 +60,7 @@ DESI下载小图的一种常用方式是修改给定格式的url，然后使用w
 
 ##### 叠加完的小图(最基础)
 
-**提示：此方法下载得到的fits文件头文件不完整。**
+**提示：此方法下载得到的fits文件头文件可能不完整。**
 
 `https://www.legacysurvey.org/viewer/cutout.{jpg or fits}?ra={RA}&dec={Dec}&layer={layer name}&pixscale={pixel scale}&size={size}&bands={bands}`支持下载给定坐标,图层,pixel scale和图像尺寸的jpg或fits图像.
 
@@ -112,7 +112,7 @@ f"https://www.legacysurvey.org/viewer/coadd-psf/?ra={RA}&dec={DEC}&layer={layer}
 误差图提供的是方差的倒数（inverse-variance），即1/sigma^2。在这里额外提及invvar是为了提醒以下内容
 想下载误差图可以通过修改`https://www.legacysurvey.org/viewer/cutout.{jpg or fits}?ra={RA}&dec={Dec}&layer={layer name}&pixscale={pixel scale}&size={size}&bands={bands}`，在他的后面添加一个参数`&invvar=True`即可。
 
-除此之外，这个url后面的参数可以设置成下面这些，例如no-image参数可以让fits里只有invvar没有原来的测光图像
+除此之外，这个url后面的参数可以设置成下面这些
 ![](https://raw.githubusercontent.com/Rh-YE/Image/main/202409111533125.png)
 
 ### 大图模式
